@@ -1,0 +1,1 @@
+only -d- is the invalid one because of the dollar sign
