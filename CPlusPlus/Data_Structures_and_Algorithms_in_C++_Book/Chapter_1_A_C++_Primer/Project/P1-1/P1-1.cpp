@@ -9,7 +9,7 @@ int main(){
 	string str = "I will always use object-oriented design";
 	for(int i =0 ; i < n ; i++){
 		string x = str;
-		for(int i = 0 ; i < 8 ; i++)
+		for(int i = 0 ; i < t ; i++)
 			x.erase(x.begin()+rand()%x.size());
 		cout<<i<<'\t'<<x<<endl;
 	}

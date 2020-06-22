@@ -11,8 +11,7 @@ struct date{
 	}
 	bool operator== (const date& y){
 		return day==y.day&&
-		month==y.month&&
-		year==y.year;
+		month==y.month;
 	}	
 	void print(){
 		cout<<day<<'/'<<month<<'/'<<year<<endl;		
@@ -22,6 +21,7 @@ struct date{
 int main(){
  	srand(time(NULL));
 	for(int n = 5 ; n <=1000 ; n+=5){
+		cout<<"The Number of Peaple equals\t"<<n<<endl;
 		date* d = new date[n];
 		for(int i=0;i<n;i++){
 			d[i].generate();
